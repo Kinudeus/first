@@ -1,13 +1,13 @@
 import doctest
 
-def Add(x,y):
+def Add():
     x = input('xの値')
     y = input('yの値')
     z = int(x) + int(y)
     print(z)
     return(z)
 
-Add(1,1)
+Add()
 
 if __name__ == '__main__':
     doctest.testmod(verbose = True)
