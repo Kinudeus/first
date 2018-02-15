@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 def addList(arg1,arg2):
 
@@ -13,7 +14,24 @@ def addList(arg1,arg2):
         print('None')
         return()
 
-addList(np.array([1,2,3]),np.array([4,5,6]))
+x = input('xの値')
+y = input('yの値')
+z = input('z')
+a = input('a')
+b = input('b')
+c = input('c')
 
+x = int(x)
+y = int(y)
+z = int(z)
+a = int(a)
+b = int(b)
+c = int(c)
+
+addList(np.array([x,y,z]),np.array([a,b,c]))
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
 
 
